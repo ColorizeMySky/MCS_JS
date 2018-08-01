@@ -1,0 +1,41 @@
+@import url('reset.css');
+
+body {
+	background-color: lightgrey;
+    display: flex;
+    flex-direction: column;
+}
+
+form, .result {
+	margin: auto;
+	margin-top: 50px;
+	font-size: 2vw;
+	display: flex;
+    flex-direction: column;
+}
+input {
+	font-size: 1.5vw;
+}
+input + input {
+	margin-top: 50px;
+    padding: 5px;
+    border: 1px solid darkgrey;
+    border-radius: 10px;
+    background: linear-gradient(to bottom, rgba(219,219,219,1) 0%, 
+								      	   rgba(226,226,226,1) 20%, 
+								    	   rgba(254,254,254,1) 40%, 
+								    	   rgba(254,254,254,1) 50%, 
+								    	   rgba(254,254,254,1) 60%, 
+								    	   rgba(226,226,226,1) 80%, 
+								    	   rgba(219,219,219,1) 100%);
+}
+input + input:focus {
+	outline: none;
+}
+input + input:hover {
+	box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+}
+.result p {
+	margin-bottom: 25px;
+	text-align: center;
+}
