@@ -1,7 +1,4 @@
 const form = document.forms[0];
-var result = document.querySelector('.total');
-
-
 
 form.onsubmit = function(degree) {
 	degree.preventDefault();
@@ -18,7 +15,7 @@ function getWeather() {
 	xhr.send();
 
 	if (xhr.status != 200) {
-		document.querySelector('.result').innerHTML = '<p>' + xhr.status + ', ' + xhr.statusText;
+		document.querySelector('.result').innerHTML = '<p>' + xhr.status + ', ' + xhr.statusText + '</p>';
 	}
 	else {
 		var weather = JSON.parse(xhr.response);
