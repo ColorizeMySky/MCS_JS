@@ -35,7 +35,7 @@ if (crypto[0].price > crypto[1].price && crypto[0].price > crypto[2].price) {
 	scales[1].style.width = scales[0].clientWidth*crypto[1].price/crypto[0].price + 'px';
 	scales[2].style.width = scales[0].clientWidth*crypto[2].price/crypto[0].price + 'px';
 }
-else if (crypto[1].price > crypto[2].price && crypto[1].price > crypto[0].price) {
+else if (crypto[1].price > crypto[2].cprice && crypto[1].price > crypto[0].price) {
 	scales[1].style.width = '75%';
 	scales[0].style.width = scales[1].clientWidth*crypto[0].price/crypto[1].price + 'px';
 	scales[2].style.width = scales[1].clientWidth*crypto[2].price/crypto[1].price + 'px';
