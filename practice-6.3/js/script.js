@@ -6,7 +6,7 @@ form.onsubmit = function(degree) {
 }
 
 function getWeather() {
-	var APIKey = 'f4fc5cccbe8f9f7cc66b565c343fcd31';
+	var APIKey = '***';
 	var city = form.elements.city.value;
 	var url = 'http://api.openweathermap.org/data/2.5/weather?q=' + city + '&APPID=' + APIKey + '&units=metric';
 
